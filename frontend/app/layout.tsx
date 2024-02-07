@@ -7,7 +7,6 @@ import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
-export const runtime = 'edge';
 
 export const metadata: Metadata = {
 	title: {
