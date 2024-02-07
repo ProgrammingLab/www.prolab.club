@@ -58,5 +58,5 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           projectName: www-prolab-club
-          directory: .vercel/output/static
+          directory: frontend/.vercel/output/static
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
