@@ -3,6 +3,7 @@ name: Cloudflare Pages
 on:
   push:
     paths:
+      - .github/workflows/deploy-cf-pages.yml
       - frontend/**
   pull_request:
     branches:
