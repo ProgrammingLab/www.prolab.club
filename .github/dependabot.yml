@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/frontend"
+    schedule:
+      interval: "daily"
+      time: "04:41"
+      timezone: "Asia/Tokyo"
+    target-branch: "develop"
+  - package-ecosystem: "pip"
+    directory: "/backend"
+    schedule:
+      interval: "daily"
+      time: "04:41"
+      timezone: "Asia/Tokyo"
+    target-branch: "develop"
