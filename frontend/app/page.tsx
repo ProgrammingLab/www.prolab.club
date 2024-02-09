@@ -1,15 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Link } from "@nextui-org/link";
 import { Code } from "@nextui-org/code"
-import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
 import { useEffect } from "react";
-import { Odor_Mean_Chey } from "next/font/google";
-import { Typography } from "@mui/material";
 import { Skeleton } from "@nextui-org/react";
 
 export default function Home() {
