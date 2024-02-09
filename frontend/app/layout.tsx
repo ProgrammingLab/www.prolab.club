@@ -45,15 +45,15 @@ export default function RootLayout({
 						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
 							{children}
 						</main>
-						<footer className="w-full flex items-center justify-center py-3">
+						<footer className="w-full flex flex-col items-center justify-center py-3">
+							<p>このウェブサイトがカスいと思った？今すぐ入部して編集！</p>
 							<Link
 								isExternal
 								className="flex items-center gap-1 text-current"
 								href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
 								title="nextui.org homepage"
 							>
-								<span className="text-default-600">Powered by</span>
-								<p className="text-primary">NextUI</p>
+								<span className="text-default-600">(c) 2024 久留米高専プログラミングラボ部</span>
 							</Link>
 						</footer>
 					</div>
