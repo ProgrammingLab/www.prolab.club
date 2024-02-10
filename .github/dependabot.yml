@@ -6,9 +6,11 @@ updates:
       interval: "daily"
       time: "04:41"
       timezone: "Asia/Tokyo"
+    target-branch: develop
   - package-ecosystem: "pip"
     directory: "/backend"
     schedule:
       interval: "daily"
       time: "04:41"
       timezone: "Asia/Tokyo"
+    target-branch: develop
