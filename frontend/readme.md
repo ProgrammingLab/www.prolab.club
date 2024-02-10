@@ -4,6 +4,7 @@
 
 開発を始めるコマンド
 ```
+// developブランチに切替
 npm ci
 npm run dev
 ```
