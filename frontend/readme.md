@@ -7,3 +7,4 @@
 npm ci
 npm run dev
 ```
+mainブランチにpushしてもらえれば、Actionsによって本番環境に自動反映されます！
