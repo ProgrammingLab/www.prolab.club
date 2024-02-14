@@ -22,7 +22,7 @@
     "@nextui-org/system": "2.0.15",
     "@nextui-org/theme": "2.1.17",
     "@react-aria/ssr": "^3.8.0",
-    "@react-aria/visually-hidden": "^3.8.6",
+    "@react-aria/visually-hidden": "^3.8.9",
     "@types/node": "20.11.17",
     "@types/react": "18.2.55",
     "@types/react-dom": "18.2.19",
