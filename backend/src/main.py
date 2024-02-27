@@ -12,7 +12,7 @@ def hello():
     cnt += 1
     with open("sample.txt", "w+", encoding="utf-8") as file:
         file.write(str(cnt))
-    return "アクセス数" + str(cnt)
+    return str(cnt)
 
 # 実行
 if __name__ == '__main__':
