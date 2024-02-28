@@ -4,7 +4,7 @@ FROM nginx:1.19.7-alpine
 RUN apk add bash
 
 # Add nginx.conf to container
-COPY --chown=nginx:nginx /backend/docker/nginx/nginx.conf /etc/nginx/nginx.conf
+COPY --chown=nginx:nginx ./nginx.conf /etc/nginx/nginx.conf
 
 # set workdir
 WORKDIR /app

@@ -38,7 +38,7 @@ jobs:
         - name: Build and Push
           uses: docker/build-push-action@v5
           with:
-            context: ./backend/docker/nginx
+            context: ./backend/nginx
             cache-from: type=gha
             cache-to: type=gha, mode=max
             push: true
@@ -72,7 +72,7 @@ jobs:
         - name: Build and Push
           uses: docker/build-push-action@v5
           with:
-            context: ./backend/docker/flask
+            context: ./backend
             cache-from: type=gha
             cache-to: type=gha, mode=max
             push: true
