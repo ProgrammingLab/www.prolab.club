@@ -1,6 +1,7 @@
 services:
   nginx-proxy:
     build: nginx
+    image: ghcr.io/ProgrammingLab/backend-nginx:main
     restart: always
     network_mode: "host"
     depends_on:
@@ -8,5 +9,6 @@ services:
     command: /app/start.sh
   flask-app:
     build: flask
+    image: ghcr.io/ProgrammingLab/backend-flask:main
     restart: always
     network_mode: "host"
