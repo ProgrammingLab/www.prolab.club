@@ -20,7 +20,9 @@ export default function Home() {
 				console.error("Error:", error);
 				setCounter(-1);
 			});
-		setIsLoaded(true);
+		
+		// 0.1秒後にロード完了
+		setTimeout(() => setIsLoaded(true), 100);
 	}, []);
 
 	return (
