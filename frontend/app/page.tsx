@@ -18,6 +18,7 @@ export default function Home() {
 			})
 			.catch(error => {
 				console.error("Error:", error);
+				setCounter(-1);
 			});
 		setIsLoaded(true);
 	}, []);
