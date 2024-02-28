@@ -2,11 +2,13 @@ services:
   nginx-proxy:
     image: ghcr.io/programminglab/backend-nginx:main
     restart: always
-    network_mode: "host"
+    ports:
+      - "80:8080"
     depends_on:
       - flask-app
   flask-app:
     image: ghcr.io/programminglab/backend-flask:main
     restart: always
-    network_mode: "host"
+    ports:
+      - "127.0.0.1:5000:5000"
     command: gunicorn -w 3 -t 60 app:app
