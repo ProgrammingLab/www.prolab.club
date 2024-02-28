@@ -30,7 +30,7 @@ jobs:
           id: meta
           uses: docker/metadata-action@v5
           with:
-            images: ghcr.io/ProgrammingLab/backend-flask
+            images: ghcr.io/ProgrammingLab/backend-nginx
             tags: |
               type=ref,event=branch
               type=sha
@@ -64,7 +64,7 @@ jobs:
           id: meta
           uses: docker/metadata-action@v5
           with:
-            images: ghcr.io/ProgrammingLab/backend-nginx
+            images: ghcr.io/ProgrammingLab/backend-flask
             tags: |
               type=ref,event=branch
               type=sha
