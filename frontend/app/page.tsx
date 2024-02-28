@@ -10,8 +10,19 @@ export default function Home() {
 	const [counter, setCounter] = useState(0);
 	const [isLoaded, setIsLoaded] = useState(false);
 	useEffect(() => {
-		setCounter(-1);
-		setIsLoaded(true);
+		fetch("https://www-backend.prolab.club/hello")
+			.then(response => response.json())
+			.then(data => {
+				setCounter(data);
+				console.log(data);
+			})
+			.catch(error => {
+				console.error("Error:", error);
+				setCounter(-1);
+			});
+		
+		// 0.1秒後にロード完了
+		setTimeout(() => setIsLoaded(true), 100);
 	}, []);
 
 	return (
