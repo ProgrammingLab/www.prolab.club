@@ -1,0 +1,12 @@
+services:
+  nginx-proxy:
+    build: nginx
+    restart: always
+    network_mode: "host"
+    depends_on:
+      - flask-app
+    command: /app/start.sh
+  flask-app:
+    build: flask
+    restart: always
+    network_mode: "host"
