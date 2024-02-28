@@ -11,4 +11,11 @@ services:
     restart: always
     ports:
       - "127.0.0.1:5000:5000"
+    volumes:
+      - ./src/sample.txt:/home/app/sample.txt
     command: gunicorn -w 3 -t 60 app:app
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 10 --cleanup
