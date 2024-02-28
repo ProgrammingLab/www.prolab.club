@@ -9,4 +9,4 @@ services:
     image: ghcr.io/programminglab/backend-flask:main
     restart: always
     network_mode: "host"
-#    command: gunicorn -w 3 -t 60 app:app
+    command: gunicorn -w 3 -t 60 app:app
