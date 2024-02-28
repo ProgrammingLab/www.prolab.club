@@ -13,7 +13,7 @@ services:
       - "127.0.0.1:5000:5000"
     volumes:
       - ./src/sample.txt:/home/app/sample.txt
-    command: gunicorn -w 3 -t 60 app:app
+    command: gunicorn -w 3 -t 60 -b 0.0.0.0:5000 app:app
   watchtower:
     image: containrrr/watchtower
     volumes:

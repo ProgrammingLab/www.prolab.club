@@ -16,7 +16,7 @@ USER nonroot
 
 # copy all the files to the container
 COPY --chown=nonroot:nonroot ./src .
-
+RUN rm -rf sample.txt
 # venv
 ENV VIRTUAL_ENV=/home/app/venv
 
