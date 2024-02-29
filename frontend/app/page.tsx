@@ -44,7 +44,6 @@ export default function Home() {
 				<Skeleton isLoaded={isLoaded}>
 					<p>あなたは<Code>{counter}</Code>人目の訪問者ですわ！</p>
 				</Skeleton>
-				<p># under construction</p>
 			</div>
 
 			<div className="mt-8">
