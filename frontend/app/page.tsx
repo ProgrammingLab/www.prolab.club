@@ -33,7 +33,7 @@ export default function Home() {
 				</h1>
 				<br />
 				<h1 className={title({color: "blue"})}>
-					プログラミングラボ部
+					プログラミング<br />ラボ部
 				</h1>
 				<p className={subtitle({ class: "mt-4" })}>
 					KNCT ProgrammingLab
@@ -52,7 +52,7 @@ export default function Home() {
 				</h2>
 				<p>毎週{"{"}月, 水, 金{"}"}曜日</p>
 				<p>午後4時頃から</p>
-				<p>○○棟2階 制御情報工学実験室(通称SJ)</p>
+				<p>電気電子・制御情報工学科棟2階 制御情報工学実験室(通称SJ)<br />学内マップ番号 E03 215</p>
 				<p>入部希望者はSJに来て下さい!</p>
 			</div>
 		</section>
