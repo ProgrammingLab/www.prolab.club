@@ -36,7 +36,7 @@ jobs:
               type=sha
 
         - name: Build and Push
-          uses: docker/build-push-action@v5
+          uses: docker/build-push-action@v6
           with:
             context: ./backend/nginx
             cache-from: type=gha
@@ -70,7 +70,7 @@ jobs:
               type=sha
 
         - name: Build and Push
-          uses: docker/build-push-action@v5
+          uses: docker/build-push-action@v6
           with:
             context: ./backend
             cache-from: type=gha
