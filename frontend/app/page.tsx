@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Code } from "@nextui-org/code"
+import { Code } from "@nextui-org/react"
 import { title, subtitle } from "@/components/primitives";
 import { useEffect } from "react";
 import { Skeleton } from "@nextui-org/react";

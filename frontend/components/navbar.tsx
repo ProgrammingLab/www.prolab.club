@@ -7,14 +7,11 @@ import {
 	NavbarBrand,
 	NavbarItem,
 	NavbarMenuItem,
-} from "@nextui-org/navbar";
-import { Button } from "@nextui-org/button";
-import { Kbd } from "@nextui-org/kbd";
-import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
+} from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
 import { Avatar } from "@nextui-org/react";
 
-import { link as linkStyles } from "@nextui-org/theme";
+import { link as linkStyles } from "@nextui-org/react";
 
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
@@ -24,8 +21,6 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import {
 	TwitterIcon,
 	GithubIcon,
-	HeartFilledIcon,
-	SearchIcon,
 } from "@/components/icons";
 
 export const Navbar = () => {
