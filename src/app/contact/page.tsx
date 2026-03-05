@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "コンタクト",
+  description: "久留米高専プログラミングラボ部(ProLab)へのお問い合わせはこちら。",
+  openGraph: {
+    url: "https://www.prolab.club/contact",
+  },
+};
+
 export default function Contact() {
   return (
     <div className="h-[80vh] bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 flex flex-col items-center justify-center px-4">

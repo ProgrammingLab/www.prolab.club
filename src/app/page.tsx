@@ -1,6 +1,16 @@
+import type { Metadata } from "next";
 import { Strong } from "@/components/markup";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "久留米高専 プログラミングラボ部",
+  description:
+    "久留米高専プログラミングラボ部(ProLab)の公式サイトです。プログラミングに興味を持つ学生が集まり、アプリ・ゲーム・アルゴリズムを制作しています。毎週月〜木曜日 16:30〜 電気電子・制御情報工学科棟2階 SJ教室にて活動中。",
+  openGraph: {
+    url: "https://www.prolab.club",
+  },
+};
 
 export default function Home() {
   return (
