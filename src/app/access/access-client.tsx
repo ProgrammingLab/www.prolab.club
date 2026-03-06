@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { useEffect, useRef } from "react";
+import Vivus from "vivus";
 
 export default function AccessClient() {
   const isOnce = useRef(false);
@@ -16,8 +17,6 @@ export default function AccessClient() {
       map.current.destroy();
       map.current = null;
       // mapRef.current.innerHTML = "";
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      //@ts-ignore
       map.current = new Vivus(
         "map",
         {
@@ -35,8 +34,6 @@ export default function AccessClient() {
   useEffect(() => {
     if (isOnce.current) return;
     isOnce.current = true;
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    //@ts-ignore
     map.current = new Vivus("map", {
       type: "oneByOne",
       duration: 200,

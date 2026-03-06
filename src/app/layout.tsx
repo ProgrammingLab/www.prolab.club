@@ -77,10 +77,6 @@ export default function RootLayout({
             </footer>
           </div>
         </ThemeProvider>
-        <script
-          src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"
-          async
-        ></script>
       </body>
     </html>
   );

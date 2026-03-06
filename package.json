@@ -31,6 +31,7 @@
 		"@types/node": "^20.19.35",
 		"@types/react": "^19.1.5",
 		"@types/react-dom": "^19.1.5",
+		"@types/vivus": "^0.4.7",
 		"eslint": "^9",
 		"eslint-config-next": "15.4.6",
 		"shadcn": "^3.8.5",
